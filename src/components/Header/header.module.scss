@@ -1,0 +1,65 @@
+.header {
+	display: flex;
+	font-size: 25px;
+	font-weight: 700;
+	justify-content: space-between;
+	padding: 5px 8px 0px 8px;
+}
+.header_elements {
+	display: flex;
+	gap: 30px;
+	font-size: 20px;
+}
+
+/* header.module.scss */
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	background-color: #333;
+	color: #fff;
+}
+
+.header a {
+	color: #fff;
+	text-decoration: none;
+	margin-right: 15px;
+}
+
+.header_elements {
+	display: flex;
+	align-items: center;
+}
+
+.burger_menu {
+	font-size: 1.5rem;
+	cursor: pointer;
+	display: none; /* Hide the burger menu on larger screens */
+}
+
+.mobile_menu {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+
+	gap: 10px;
+	top: 80px; /* Adjust as needed */
+	left: 0;
+	background-color: #333;
+	padding: 1rem;
+	width: 100%;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Media query to show/hide burger menu based on screen width */
+@media (max-width: 768px) {
+	.burger_menu {
+		display: block; /* Show the burger menu on smaller screens */
+	}
+
+	.header_elements {
+		display: none; /* Hide the regular menu on smaller screens */
+	}
+}
