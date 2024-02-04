@@ -4,7 +4,7 @@ import avatar from './avatar.png'
 import github from './Github.gif'
 import html from './html.svg'
 import js from './js.svg'
-import telegram from './telegram.gif'
+import telegram from './Telegram.gif'
 
 export const MainPage = () => {
 	return (
