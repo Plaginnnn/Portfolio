@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import style from './header.module.scss'
 import { Squash as Hamburger } from 'hamburger-react'
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
 	const [isMenuOpen, setMenuOpen] = useState(false)
@@ -8,7 +9,9 @@ export const Header = () => {
 	const toggleMenu = () => {
 		setMenuOpen(!isMenuOpen)
 	}
-
+	const closeMenu = () => {
+		setMenuOpen(false);
+	};
 	return (
 		<header className={style.header}>
 			<div>
@@ -18,8 +21,8 @@ export const Header = () => {
 			</div>
 			{!isMenuOpen && (
 				<div className={style.header_elements}>
-					<a href='#'>Home</a>
-					<a href='#'>About</a>
+				<Link  to=''>Home</Link>
+					<Link to='about'>About</Link>
 					<a href='#'>Projects</a>
 					<a href='#'>Contact</a>
 				</div>
@@ -27,8 +30,8 @@ export const Header = () => {
 			{isMenuOpen && (
 				<div className={style.mobile_menu}>
 					{/*mobile menu items here */}
-					<a href='#'>Home</a>
-					<a href='#'>About</a>
+					<Link onClick={closeMenu} to=''>Home</Link>
+				<Link onClick={closeMenu} to='about'>About</Link>
 					<a href='#'>Projects</a>
 					<a href='#'>Contact</a>
 				</div>

@@ -3,50 +3,48 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 60vh; // Это обеспечит центрирование по вертикали на всю высоту экрана,f если необходимо
+	height: 70vh; // Это обеспечит центрирование по вертикали на всю высоту экрана,f если необходимо
 	padding: 0px 25px;
 	gap: 50px;
+}
+.icons{
+	display: flex;
+	@media (max-width: 933px) {
+		justify-content: center;
+	}
 	
 }
 @media (max-width: 933px) {
-	.avatar{
+	.avatar {
 		display: none;
 	}
 }
 @media (max-width: 933px) {
-	.icon_github{
+	.icon_github {
 		margin: 0 auto;
 		min-width: 100px;
 	}
 }
-.content{
 
-}
-.title{
+.title {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-
-
 }
-.icon_github{
-
+.icon_github {
 	max-width: 70px;
-	
 }
-.techstack_list{
+.techstack_list {
 	padding-top: 15px;
 	display: flex;
 	gap: 40px;
 	justify-content: center;
 }
-.avatar{
-	
+.avatar {
 }
 .helloImg {
 	max-width: 100px;
-	
 }
 .title_text {
 	font-size: 60px;
