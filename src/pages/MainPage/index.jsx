@@ -4,7 +4,7 @@ import avatar from './avatar.png'
 import github from './Github.gif'
 import html from './html.svg'
 import js from './js.svg'
-import telegram from './Telegram.gif'
+
 
 export const MainPage = () => {
 	return (
@@ -21,10 +21,7 @@ export const MainPage = () => {
 					<a href='https://github.com/Plaginnnn'>
 						<img className={style.icon_github} src={github} alt='' />
 					</a>
-					<a href='https://t.me/@Plaginnnnn
-'>
-						<img className={style.icon_github} src={telegram} alt='' />
-					</a>
+					
 				</div>
 				<div className={style.techstack}>
 					<h4>Tech Stack</h4>
